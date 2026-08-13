@@ -6,10 +6,18 @@
 ---
 
 ## 📜 Patents & Intellectual Property
-- **Invention Title:** *"Generative Artificial Intelligence System for Terrain-Constrained Reconstruction of Historical Geography"* (**GeoMemory+ Framework**)
-  - **Co-Inventors:** **Sampathkumar N** (Co-Inventor), Duranjai V (Co-Inventor), Mr. Ilamurugan G (Co-Inventor & Assistant Professor)
-  - **Core Innovation:** Multi-stage generative AI pipeline (Diffusion Models / GANs) conditioned on Digital Elevation Models (DEM), slope gradients, watershed flow directions, and topographic continuity to reconstruct historical geographic landscapes with stochastic spatial uncertainty estimation.
-  - **Applications:** Climate change impact assessment, paleogeography, disaster risk evaluation, and urban planning.
+
+### 1. GeoMemory+ Framework (Patent Filed 🏛️)
+- **Invention Title:** *"Generative Artificial Intelligence System for Terrain-Constrained Reconstruction of Historical Geography"*
+- **Co-Inventors:** **Sampathkumar N** (Co-Inventor), Duranjai V (Co-Inventor), Mr. Ilamurugan G (Co-Inventor & Assistant Professor)
+- **Core Innovation:** Multi-stage generative AI pipeline (Diffusion Models / GANs) conditioned on Digital Elevation Models (DEM), slope gradients, watershed flow directions, and topographic continuity with stochastic spatial uncertainty estimation.
+- 🔗 **Documentation Repo:** [github.com/sam-creates-projects/geomemory-historical-geography-ai-patent](https://github.com/sam-creates-projects/geomemory-historical-geography-ai-patent)
+
+### 2. EduPulse AI Framework (Patent Filed 🏛️)
+- **Invention Title:** *"AI-Powered Personalized Learning and Career Guidance System for Technical Education"*
+- **Co-Inventors:** **Sampathkumar N** (Co-Inventor), Duranjai V (Co-Inventor), Mr. Ilamurugan G (Co-Inventor & Assistant Professor)
+- **Core Innovation:** Multi-layered adaptive learning architecture incorporating adaptive competency scoring (CMS/LPS/PPS), multilingual LLM request brokers (504), semantic NLP (508), and automated skill-gap career mapping.
+- 🔗 **Documentation Repo:** [github.com/sam-creates-projects/edupulse-ai-personalized-learning-patent](https://github.com/sam-creates-projects/edupulse-ai-personalized-learning-patent)
 
 ---
 
@@ -23,9 +31,9 @@
 
 ## 🔬 Research Focus Areas
 - Geospatial AI & Remote Sensing (Diffusion Models & DEM Conditioning)
+- EdTech Adaptive AI & Multilingual LLM Agents
 - Climate AI & Environmental Time Series Forecasting
 - Computer Vision & Pattern Recognition
-- MLOps & High-Performance Neural Inference
 
 ---
 
@@ -46,5 +54,5 @@
 ---
 
 ## 🏆 Honors & Awards
-- **Patent Co-Inventor / IP Holder** – Generative AI System for Historical Geography (`GeoMemory+`).
+- **Dual Patent Co-Inventor / IP Holder** – GeoMemory+ Framework & EduPulse AI Framework.
 - **1st Rank Winner** – College AI & ML Department Innovation Hackathon (2026).
