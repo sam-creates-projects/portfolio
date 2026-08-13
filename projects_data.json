@@ -1,0 +1,125 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "title": "Aspiring MS Student & Software Engineer",
+    "location": "India / Open to US Admissions",
+    "email": "your.email@example.com",
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "scholar": "https://scholar.google.com",
+    "bio": "Passionate Computer Science researcher & developer interested in Distributed Systems, Machine Learning, and Cloud Architecture. Seeking Master's opportunities in the US with Research/Teaching Assistantships.",
+    "targetDegree": "Master of Science in Computer Science (Fall 2026)",
+    "gpa": "3.8 / 4.0 (Equiv.)",
+    "gre": "325+ (Quant 168, Verbal 157)",
+    "toefl": "108 / 120"
+  },
+  "researchInterests": [
+    "Machine Learning & Deep Learning",
+    "Distributed Systems & Cloud Computing",
+    "Computer Vision & NLP",
+    "High-Performance Computing"
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Autonomous Neural Navigation Agent",
+      "category": "ai-ml",
+      "tags": ["Python", "PyTorch", "Reinforcement Learning", "ROS2", "Computer Vision"],
+      "shortDescription": "End-to-end reinforcement learning framework for autonomous robot navigation in cluttered unknown environments.",
+      "fullDescription": "Designed and trained a deep Q-learning & SAC neural agent using PyTorch integrated with ROS2 and Gazebo simulator. Achieved 94.2% obstacle avoidance success rate across 500 benchmark simulation runs.",
+      "githubUrl": "https://github.com/yourusername/neural-navigation-agent",
+      "demoUrl": "https://your-demo-link.com",
+      "impact": "94.2% Success Rate | Reduced Navigation Latency by 35%",
+      "featured": true,
+      "stars": 42,
+      "forks": 12
+    },
+    {
+      "id": "proj-2",
+      "title": "Distributed Multi-Tenant Task Orchestrator",
+      "category": "systems",
+      "tags": ["Go", "gRPC", "Docker", "Raft Consensus", "Redis"],
+      "shortDescription": "Fault-tolerant distributed job scheduler built with Go using Raft consensus protocol.",
+      "fullDescription": "Engineered a distributed scheduler capable of executing thousands of asynchronous tasks across node clusters with leader election, heartbeat checks, and automatic task reassignment on node failure.",
+      "githubUrl": "https://github.com/yourusername/distributed-task-orchestrator",
+      "demoUrl": "",
+      "impact": "Handles 10k+ ops/sec with < 5ms cluster sync overhead",
+      "featured": true,
+      "stars": 85,
+      "forks": 24
+    },
+    {
+      "id": "proj-3",
+      "title": "Real-Time Collaborative Code Editor",
+      "category": "web",
+      "tags": ["TypeScript", "React", "Node.js", "WebSockets", "CRDTs"],
+      "shortDescription": "Sub-50ms latency collaborative code editor using Conflict-Free Replicated Data Types (Yjs).",
+      "fullDescription": "Built a full-stack web application enabling simultaneous multi-user code editing, embedded terminal execution, and video stream integration. Used WebSockets and CRDT algorithms to eliminate edit collisions.",
+      "githubUrl": "https://github.com/yourusername/collab-code-editor",
+      "demoUrl": "https://collab-code-demo.vercel.app",
+      "impact": "Supports 50 concurrent active editors per document",
+      "featured": true,
+      "stars": 60,
+      "forks": 15
+    },
+    {
+      "id": "proj-4",
+      "title": "Medical Imaging Diagnostic Classifier",
+      "category": "ai-ml",
+      "tags": ["Python", "TensorFlow", "Vision Transformers", "FastAPI", "OpenCV"],
+      "shortDescription": "Deep learning system for automated chest X-ray classification using Vision Transformers.",
+      "fullDescription": "Trained ViT and EfficientNet models on MIMIC-CXR dataset (100k+ images) achieving 0.91 AUC score for pneumonia detection. Deployed model via FastAPI microservices with Grad-CAM visual explanations.",
+      "githubUrl": "https://github.com/yourusername/medical-imaging-vit",
+      "demoUrl": "",
+      "impact": "0.91 ROC-AUC Score | Pre-print under review",
+      "featured": false,
+      "stars": 31,
+      "forks": 8
+    },
+    {
+      "id": "proj-5",
+      "title": "Cloud-Native Infrastructure & CI/CD Pipeline",
+      "category": "devops",
+      "tags": ["Terraform", "Kubernetes", "AWS", "GitHub Actions", "Prometheus"],
+      "shortDescription": "Automated multi-region infrastructure deployment pipeline with zero-downtime blue/green rollouts.",
+      "fullDescription": "Provisioned AWS EKS clusters with Terraform Infrastructure as Code. Implemented GitOps using ArgoCD and automated monitoring with Prometheus & Grafana alerts.",
+      "githubUrl": "https://github.com/yourusername/cloud-infrastructure-pipeline",
+      "demoUrl": "",
+      "impact": "Reduced deployment time from 45 min to 4 min",
+      "featured": false,
+      "stars": 28,
+      "forks": 9
+    }
+  ],
+  "achievements": [
+    {
+      "year": "2025",
+      "title": "Winner - National Hackathon 2025",
+      "organization": "Ministry of Education / Tech Summit",
+      "description": "Secured 1st rank out of 350+ teams for building an AI-powered disaster management alert system."
+    },
+    {
+      "year": "2024",
+      "title": "Undergraduate Research Fellowship",
+      "organization": "University Department of CS",
+      "description": "Awarded grant funding to investigate distributed consensus optimization under heterogeneous network delays."
+    },
+    {
+      "year": "2024",
+      "title": "Published Research Paper",
+      "organization": "IEEE International Conference on Smart Computing",
+      "description": "Co-authored paper titled 'Optimized Distributed Inference on Edge Devices'."
+    },
+    {
+      "year": "2023",
+      "title": "Department Merit Academic Scholarship",
+      "organization": "University Academic Board",
+      "description": "Awarded 100% tuition waiver for maintaining top 1% academic standing."
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "C++", "Go", "TypeScript / JavaScript", "SQL", "Bash"],
+    "frameworks": ["PyTorch", "TensorFlow", "React.js", "Node.js / Express", "FastAPI", "ROS2"],
+    "tools": ["Docker", "Kubernetes", "Terraform", "Git & GitHub", "Linux / Unix", "AWS / GCP"]
+  }
+}

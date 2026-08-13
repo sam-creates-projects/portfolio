@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic & Engineering Portfolio | US Master's Candidate</title>
+  <meta name="description" content="Portfolio showcasing research projects, engineering achievements, and technical expertise for US Master's admissions & graduate assistantships.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background lighting effects -->
+  <div class="ambient-light light-1"></div>
+  <div class="ambient-light light-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <span class="logo-text">Scholar<span class="highlight">Portfolio</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#cv-section" class="nav-link">Interactive CV</a>
+        <a href="#funding-strategy" class="nav-link highlight-link">US Admissions Strategy</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="resume.pdf" target="_blank" download id="download-cv-btn" class="btn btn-outline">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume PDF
+        </a>
+        <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Profile Section -->
+    <section id="about" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span> Aspiring US Master's Candidate | Seeking RA / TA
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text" id="profile-name">Your Name</span>
+          </h1>
+          <p class="hero-subtitle" id="profile-title">
+            Software Engineer & Computer Science Researcher
+          </p>
+
+          <p class="hero-bio" id="profile-bio">
+            Loading profile information...
+          </p>
+
+          <!-- Key Metric Stats Card Grid -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="stat-info">
+                <span class="stat-value" id="profile-gpa">3.8 / 4.0</span>
+                <span class="stat-label">Academic GPA</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="stat-info">
+                <span class="stat-value" id="profile-gre">325+</span>
+                <span class="stat-label">GRE Target Score</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fa-solid fa-code-fork"></i></div>
+              <div class="stat-info">
+                <span class="stat-value" id="project-count-stat">5+</span>
+                <span class="stat-label">Production & Research Projects</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-cta-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-folder-open"></i> Explore Projects
+            </a>
+            <a href="#funding-strategy" class="btn btn-secondary">
+              <i class="fa-solid fa-compass"></i> Admissions & Funding Roadmap
+            </a>
+          </div>
+
+          <!-- Social / Professional Links -->
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" id="github-link" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" id="linkedin-link" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://scholar.google.com" target="_blank" id="scholar-link" title="Google Scholar">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <a href="mailto:your.email@example.com" id="email-link" title="Email Direct">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-glass">
+            <div class="avatar-container">
+              <div class="avatar-placeholder">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+            </div>
+            <div class="target-degree-badge">
+              <i class="fa-solid fa-university"></i>
+              <span id="target-degree">MS in Computer Science</span>
+            </div>
+            
+            <div class="research-tag-cloud">
+              <span class="tag-heading"><i class="fa-solid fa-flask"></i> Research Focus Areas</span>
+              <div class="tags-wrapper" id="research-tags">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <div class="funding-objective">
+              <i class="fa-solid fa-circle-check"></i> Primary Goal: Graduate Research / Teaching Assistantship (RA/TA)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Academic Standing Section -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-badge">Academic Rigor</span>
+          <h2>Research & Technical Pillars</h2>
+          <p>Aligning project portfolio with faculty research domains in US Universities</p>
+        </div>
+
+        <div class="research-grid">
+          <div class="research-card">
+            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Artificial Intelligence & ML</h3>
+            <p>Reinforcement Learning agents, Deep Computer Vision models (Transformers, ViTs), and automated diagnostic pipelines with high empirical metrics.</p>
+          </div>
+          <div class="research-card">
+            <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>Distributed & Cloud Systems</h3>
+            <p>Fault-tolerant microservices, Raft consensus algorithm implementations, gRPC high-throughput orchestrators, and Kubernetes GitOps pipelines.</p>
+          </div>
+          <div class="research-card">
+            <div class="card-icon"><i class="fa-solid fa-code-compare"></i></div>
+            <h3>Full-Stack & CRDT Systems</h3>
+            <p>Sub-50ms real-time collaborative web engines, WebSockets sync architectures, and high-performance interactive tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Portfolio Section -->
+    <section id="projects" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-left">
+            <span class="section-badge">Portfolio Showcase</span>
+            <h2>Featured Projects</h2>
+            <p>Comprehensive technical implementations with clean code and measurable impact</p>
+          </div>
+          <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="ai-ml">AI & Machine Learning</button>
+            <button class="filter-btn" data-filter="systems">Systems & Cloud</button>
+            <button class="filter-btn" data-filter="web">Full-Stack Web</button>
+            <button class="filter-btn" data-filter="devops">DevOps & Infra</button>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-box-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="project-search" placeholder="Search projects by technology (e.g. PyTorch, Go, React, Kubernetes)...">
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Timeline Section -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-badge">Track Record</span>
+          <h2>Honors, Publications & Awards</h2>
+          <p>Key milestones demonstrating academic excellence and leadership</p>
+        </div>
+
+        <div class="timeline" id="achievements-timeline">
+          <!-- Injected dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive CV & Skills Section -->
+    <section id="cv-section" class="section bg-alt">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-badge">Resume</span>
+          <h2>Technical Skills & Qualifications</h2>
+          <p>Structured view optimized for academic evaluation & ATS scanners</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skills-category-card">
+            <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+            <div class="skills-tags-container" id="languages-list"></div>
+          </div>
+          <div class="skills-category-card">
+            <h3><i class="fa-solid fa-layer-group"></i> Frameworks & Libraries</h3>
+            <div class="skills-tags-container" id="frameworks-list"></div>
+          </div>
+          <div class="skills-category-card">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Cloud, DevOps & Tools</h3>
+            <div class="skills-tags-container" id="tools-list"></div>
+          </div>
+        </div>
+
+        <div class="cv-download-cta">
+          <div class="cta-card">
+            <div class="cta-info">
+              <h3>Need the formal Academic CV?</h3>
+              <p>Download the standard ATS-friendly LaTeX-generated PDF resume customized for US University Admissions.</p>
+            </div>
+            <div class="cta-actions">
+              <a href="resume.tex" target="_blank" class="btn btn-primary"><i class="fa-solid fa-code"></i> View LaTeX Source</a>
+              <a href="GITHUB_GUIDE.md" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub Blueprint</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admissions & Funding Strategy Section -->
+    <section id="funding-strategy" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-badge">Strategic Roadmap</span>
+          <h2>US University Scholarship & Funding Guide</h2>
+          <p>Proven 5-step playbook to secure tuition waivers and Graduate Assistantships (RA/TA)</p>
+        </div>
+
+        <div class="roadmap-grid">
+          <div class="roadmap-step-card">
+            <div class="step-number">01</div>
+            <h3>GitHub Profile & Code Quality</h3>
+            <p>Organize top 3-4 repositories with clean architecture, live demos, test coverage, and comprehensive READMEs. Professors review code quality when offering Research Assistantships (RA).</p>
+          </div>
+
+          <div class="roadmap-step-card">
+            <div class="step-number">02</div>
+            <h3>Strategic Cold Emailing</h3>
+            <p>Identify 5-8 faculty members per target university whose recent papers align with your GitHub projects. Send personalized 150-word emails linking your relevant projects.</p>
+          </div>
+
+          <div class="roadmap-step-card">
+            <div class="step-number">03</div>
+            <h3>University Portfolio Mix</h3>
+            <p>Target a balanced mix: 3 Ambitious (Tier 1), 4 Target (Tier 2 with strong departmental funding history), and 2 Safe universities known for TA/RA availability.</p>
+          </div>
+
+          <div class="roadmap-step-card">
+            <div class="step-number">04</div>
+            <h3>SOP & LOR Alignment</h3>
+            <p>Draft your Statement of Purpose (SOP) directly connecting your technical projects to specific university labs. Secure LORs that explicitly validate your research potential.</p>
+          </div>
+
+          <div class="roadmap-step-card">
+            <div class="step-number">05</div>
+            <h3>Early Application Submission</h3>
+            <p>Submit applications before priority scholarship deadlines (typically Dec 1 or Dec 15 for Fall admission) to enter priority funding pools.</p>
+          </div>
+
+          <div class="roadmap-step-card highlight-card">
+            <div class="step-number"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Full Roadmap Artifact</h3>
+            <p>Access our detailed markdown guide covering exact email templates, scholarship lists, and SOP frameworks.</p>
+            <a href="US_MASTERS_SCHOLARSHIP_ROADMAP.md" target="_blank" class="btn btn-sm btn-primary">Open Strategy Guide</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-content-glass">
+      <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modal-body">
+        <!-- Content dynamic -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>&copy; 2026 Academic & Portfolio Suite. Built for US Master's & Graduate Assistantship Success.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#about">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
