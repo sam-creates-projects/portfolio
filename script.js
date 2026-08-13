@@ -45,9 +45,23 @@ document.addEventListener('DOMContentLoaded', () => {
   function populateResearchTags(interests) {
     const container = document.getElementById('research-tags');
     if (!container || !interests) return;
-    container.innerHTML = interests.map(item => `
-      <span class="chip-tag"><i class="fa-solid fa-brain"></i> ${item}</span>
-    `).join('');
+
+    const iconMap = {
+      'Computer Vision': 'fa-eye',
+      'Natural Language': 'fa-comments',
+      'Deep Learning': 'fa-brain',
+      'Reinforcement Learning': 'fa-robot',
+      'Geospatial': 'fa-earth-americas',
+      'Machine Learning Systems': 'fa-network-wired'
+    };
+
+    container.innerHTML = interests.map(item => {
+      let icon = 'fa-brain';
+      for (const [key, val] of Object.entries(iconMap)) {
+        if (item.includes(key)) { icon = val; break; }
+      }
+      return `<span class="chip-tag"><i class="fa-solid ${icon}"></i> ${item}</span>`;
+    }).join('');
   }
 
   // Render 3 Filed Patents Grid
