@@ -19,6 +19,12 @@
 - **Core Innovation:** Multi-layered adaptive learning architecture incorporating adaptive competency scoring (CMS/LPS/PPS), multilingual LLM request brokers (504), semantic NLP (508), and automated skill-gap career mapping.
 - 🔗 **Documentation Repo:** [github.com/sam-creates-projects/edupulse-ai-personalized-learning-patent](https://github.com/sam-creates-projects/edupulse-ai-personalized-learning-patent)
 
+### 3. BaristaPOV VLM Framework (Patent Filed 🏛️)
+- **Invention Title:** *"System and Method for Automated Analysis of Barista Point-of-View Video Streams to Identify Beverage Types, Ingredients, Actions, and Preparation Stages Using On-Device Vision-Language Models"*
+- **Co-Inventors:** **Sampathkumar N** (Co-Inventor), Duranjai V (Co-Inventor), Mr. Ilamurugan G (Co-Inventor & Assistant Professor)
+- **Core Innovation:** Intelligent egocentric video analysis framework utilizing zero-shot Vision-Language Models (302), text parsing (402), temporal sequence modeling (502), and skill evaluation (508) to track ingredients, actions, and preparation workflows in real-time.
+- 🔗 **Documentation Repo:** [github.com/sam-creates-projects/baristapov-vlm-video-analysis-patent](https://github.com/sam-creates-projects/baristapov-vlm-video-analysis-patent)
+
 ---
 
 ## 🎓 Education
@@ -30,10 +36,10 @@
 ---
 
 ## 🔬 Research Focus Areas
+- Vision-Language Models (VLMs) & Egocentric Video Analytics
 - Geospatial AI & Remote Sensing (Diffusion Models & DEM Conditioning)
 - EdTech Adaptive AI & Multilingual LLM Agents
 - Climate AI & Environmental Time Series Forecasting
-- Computer Vision & Pattern Recognition
 
 ---
 
@@ -54,5 +60,5 @@
 ---
 
 ## 🏆 Honors & Awards
-- **Dual Patent Co-Inventor / IP Holder** – GeoMemory+ Framework & EduPulse AI Framework.
+- **Triple Patent Co-Inventor / IP Holder** – GeoMemory+, EduPulse AI & BaristaPOV VLM.
 - **1st Rank Winner** – College AI & ML Department Innovation Hackathon (2026).

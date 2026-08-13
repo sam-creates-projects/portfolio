@@ -26,7 +26,7 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 1. 🏛️ **Patent 1:** *"Generative Artificial Intelligence System for Terrain-Constrained Reconstruction of Historical Geography"* (**GeoMemory+ Framework**)
    - **Status:** **Patent Filed**
    - **Co-Inventors:** **Sampathkumar N** (Co-Inventor), Duranjai V (Co-Inventor), Mr. Ilamurugan G (Co-Inventor & Assistant Professor)
-   - **Innovation:** Deep learning generative framework (Diffusion Models / GANs) conditioned on Digital Elevation Models (DEM), slope continuity, and watershed pathways for historical landscape synthesis with stochastic spatial uncertainty estimation.
+   - **Innovation:** Generative diffusion framework conditioned on Digital Elevation Models (DEM) and slope gradients for automated historical landscape synthesis with stochastic spatial uncertainty estimation.
    - 🔗 **Documentation Repo:** [github.com/sam-creates-projects/geomemory-historical-geography-ai-patent](https://github.com/sam-creates-projects/geomemory-historical-geography-ai-patent)
 
 2. 🏛️ **Patent 2:** *"AI-Powered Personalized Learning and Career Guidance System for Technical Education"* (**EduPulse AI Framework**)
@@ -35,12 +35,18 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
    - **Innovation:** Multi-layered adaptive learning architecture incorporating adaptive competency scoring (CMS/LPS/PPS), multilingual LLM request brokers (504), semantic NLP (508), and automated skill-gap career mapping.
    - 🔗 **Documentation Repo:** [github.com/sam-creates-projects/edupulse-ai-personalized-learning-patent](https://github.com/sam-creates-projects/edupulse-ai-personalized-learning-patent)
 
+3. 🏛️ **Patent 3:** *"System and Method for Automated Analysis of Barista Point-of-View Video Streams to Identify Beverage Types, Ingredients, Actions, and Preparation Stages Using On-Device Vision-Language Models"* (**BaristaPOV VLM**)
+   - **Status:** **Patent Filed**
+   - **Co-Inventors:** **Sampathkumar N** (Co-Inventor), Duranjai V (Co-Inventor), Mr. Ilamurugan G (Co-Inventor & Assistant Professor)
+   - **Innovation:** Egocentric computer vision framework utilizing zero-shot Vision-Language Models (302), text parsing (402), temporal sequence modeling (502), and skill evaluation (508) to track ingredients, actions, and preparation workflows in real-time.
+   - 🔗 **Documentation Repo:** [github.com/sam-creates-projects/baristapov-vlm-video-analysis-patent](https://github.com/sam-creates-projects/baristapov-vlm-video-analysis-patent)
+
 ---
 
 ## 🔬 About Me & Academic Vision
 - 🎓 **Education:** Pursuing B.E. in CSE with Specialization in **AI & Machine Learning** (Graduating May 2027).
 - 🎯 **Primary Goal:** Securing admission to top US Master's programs with **Graduate Research Assistantships (RA)**.
-- 🧪 **Research Core:** Geospatial AI, EdTech Adaptive Learning, Generative Diffusion Models, Climate AI, Time Series Anomaly Detection, and MLOps.
+- 🧪 **Research Core:** Vision-Language Models (VLMs), Geospatial AI, EdTech Adaptive AI, Climate AI, Time Series Anomaly Detection, and MLOps.
 
 ---
 
@@ -48,10 +54,10 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 
 | Project / Patent | Domain & Stack | Highlights & Metrics | Code / Repo |
 | :--- | :--- | :--- | :---: |
-| 🗺️ **GeoMemory+ Historical Geography AI (Patent)** | Generative AI, Diffusion Models, DEM, Remote Sensing | **Terrain-constrained landscape synthesis** with spatial uncertainty estimation. | [Patent Documentation](https://github.com/sam-creates-projects/geomemory-historical-geography-ai-patent) |
-| 🎓 **EduPulse AI Learning Guidance System (Patent)** | Adaptive AI, LLMs, Multilingual NLP, EdTech | **Event-driven adaptive scoring (CMS/LPS)** & automated skill-gap career mapping. | [Patent Documentation](https://github.com/sam-creates-projects/edupulse-ai-personalized-learning-patent) |
+| 👁️ **BaristaPOV VLM Video Analytics (Patent 3)** | Vision-Language Models, Egocentric Video, PyTorch | **Real-time action, ingredient, & workflow tracking** using zero-shot VLM inference. | [Patent Documentation](https://github.com/sam-creates-projects/baristapov-vlm-video-analysis-patent) |
+| 🗺️ **GeoMemory+ Historical Geography AI (Patent 1)** | Generative AI, Diffusion Models, DEM, Remote Sensing | **Terrain-constrained landscape synthesis** with spatial uncertainty estimation. | [Patent Documentation](https://github.com/sam-creates-projects/geomemory-historical-geography-ai-patent) |
+| 🎓 **EduPulse AI Learning Guidance System (Patent 2)** | Adaptive AI, LLMs, Multilingual NLP, EdTech | **Event-driven adaptive scoring (CMS/LPS)** & automated skill-gap career mapping. | [Patent Documentation](https://github.com/sam-creates-projects/edupulse-ai-personalized-learning-patent) |
 | 🌍 **AI Climate Anomaly Detection System** | Python, FastAPI, Isolation Forest, ARIMA, Next.js | **93.8% Precision** in weather anomaly detection & 0.42°C MAE forecasting. | [Code Repo](https://github.com/sam-creates-projects/climate-ai-system) |
-| 🤖 **Autonomous Neural Navigation Agent** | PyTorch, ROS2, Reinforcement Learning, Gazebo | **94.2% Success Rate** across 500 benchmark obstacle runs. | [Code Repo](https://github.com/sam-creates-projects/neural-navigation-agent) |
 
 ---
 
@@ -67,7 +73,8 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 
-### Geospatial, Systems & Cloud
+### Computer Vision, Systems & Cloud
+![Vision-Language Models](https://img.shields.io/badge/AI-Vision--Language%20Models-EE4C2C?style=flat-square)
 ![GIS / DEM](https://img.shields.io/badge/Geospatial-DEM%20%2F%20GIS-007A3D?style=flat-square)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
