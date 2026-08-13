@@ -1,5 +1,5 @@
 // ==========================================================================
-// Portfolio Interactivity & Data Rendering Engine
+// Sampathkumar N — Academic Portfolio & Patent Interactivity Engine
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,12 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
       portfolioData = await response.json();
       
       populateProfile(portfolioData.profile);
-      populateResearchTags(portfolioData.researchInterests);
+      renderPatents(portfolioData.patents);
+      renderAcademicTimeline(portfolioData.academicTimeline);
       renderProjects(portfolioData.projects);
-      renderAchievements(portfolioData.achievements);
       renderSkills(portfolioData.skills);
 
       setupEventListeners();
+      setupPhotoUpload();
     } catch (error) {
       console.error('Error loading portfolio data:', error);
     }
@@ -28,26 +29,74 @@ document.addEventListener('DOMContentLoaded', () => {
   // Populate Profile Information
   function populateProfile(profile) {
     if (!profile) return;
-    document.getElementById('profile-name').textContent = profile.name;
-    document.getElementById('profile-title').textContent = profile.title;
-    document.getElementById('profile-bio').textContent = profile.bio;
-    document.getElementById('profile-gpa').textContent = profile.gpa;
-    document.getElementById('profile-gre').textContent = profile.gre;
-    document.getElementById('target-degree').textContent = profile.targetDegree;
+    if (document.getElementById('profile-name')) document.getElementById('profile-name').textContent = profile.name;
+    if (document.getElementById('profile-title')) document.getElementById('profile-title').textContent = profile.title;
+    if (document.getElementById('profile-bio')) document.getElementById('profile-bio').textContent = profile.bio;
+    if (document.getElementById('profile-gpa')) document.getElementById('profile-gpa').textContent = profile.gpa;
+    if (document.getElementById('target-degree')) document.getElementById('target-degree').textContent = profile.targetDegree;
 
-    if (profile.github) document.getElementById('github-link').href = profile.github;
-    if (profile.linkedin) document.getElementById('linkedin-link').href = profile.linkedin;
-    if (profile.scholar) document.getElementById('scholar-link').href = profile.scholar;
-    if (profile.email) document.getElementById('email-link').href = `mailto:${profile.email}`;
+    if (profile.github && document.getElementById('github-link')) document.getElementById('github-link').href = profile.github;
+    if (profile.linkedin && document.getElementById('linkedin-link')) document.getElementById('linkedin-link').href = profile.linkedin;
+    if (profile.email && document.getElementById('email-link')) document.getElementById('email-link').href = `mailto:${profile.email}`;
   }
 
-  // Populate Research Interest Tags
-  function populateResearchTags(interests) {
-    const container = document.getElementById('research-tags');
-    if (!container || !interests) return;
-    container.innerHTML = interests.map(item => `
-      <span class="chip-tag"><i class="fa-solid fa-microscope"></i> ${item}</span>
+  // Render 3 Filed Patents Grid
+  function renderPatents(patents) {
+    const container = document.getElementById('patents-grid');
+    if (!container || !patents) return;
+
+    container.innerHTML = patents.map(patent => `
+      <div class="patent-card">
+        <div class="patent-card-header">
+          <span class="patent-status-badge"><i class="fa-solid fa-certificate"></i> ${patent.status}</span>
+          <h3>${patent.title}</h3>
+        </div>
+
+        <p class="patent-inventors"><i class="fa-solid fa-users"></i> <strong>Inventors:</strong> ${patent.coInventors}</p>
+        <p class="patent-description">${patent.description}</p>
+
+        <div class="patent-tags">
+          ${patent.tags.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+        </div>
+
+        <div class="patent-card-footer">
+          <a href="${patent.githubUrl}" target="_blank" class="btn btn-sm btn-primary">
+            <i class="fa-brands fa-github"></i> View Patent Documentation Repo
+          </a>
+        </div>
+      </div>
     `).join('');
+  }
+
+  // Render Academic Timeline (Semesters 1-7 & Schooling)
+  function renderAcademicTimeline(timeline) {
+    const container = document.getElementById('academic-timeline');
+    if (!container || !timeline) return;
+
+    container.innerHTML = timeline.map(item => {
+      // Determine grade pill badge class
+      let badgeClass = 'badge-a-grade';
+      if (item.grade.includes('O Grade') || item.grade.includes('99')) {
+        badgeClass = 'badge-o-grade';
+      } else if (item.grade.includes('A+')) {
+        badgeClass = 'badge-aplus-grade';
+      }
+
+      return `
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header-flex">
+              <span class="timeline-year"><i class="fa-solid fa-calendar-days"></i> ${item.period}</span>
+              <span class="grade-pill ${badgeClass}">${item.grade}</span>
+            </div>
+            <h3>${item.title}</h3>
+            <div class="timeline-org"><i class="fa-solid fa-building-columns"></i> ${item.institution}</div>
+            <p>${item.description}</p>
+          </div>
+        </div>
+      `;
+    }).join('');
   }
 
   // Render Projects Grid
@@ -55,16 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('projects-grid');
     if (!container || !projects) return;
 
-    document.getElementById('project-count-stat').textContent = `${projects.length}+`;
-
-    if (projects.length === 0) {
-      container.innerHTML = `<p class="no-results">No projects match the criteria.</p>`;
-      return;
-    }
-
     container.innerHTML = projects.map(proj => `
-      <div class="project-card" data-category="${proj.category}" data-id="${proj.id}">
-        ${proj.featured ? '<span class="project-badge-featured"><i class="fa-solid fa-star"></i> Featured</span>' : ''}
+      <div class="project-card">
+        ${proj.featured ? '<span class="project-badge-featured"><i class="fa-solid fa-star"></i> Featured Research</span>' : ''}
         
         <div>
           <div class="project-card-header">
@@ -85,42 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <div class="project-card-footer">
           <div class="project-links">
-            ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank"><i class="fa-brands fa-github"></i> Code</a>` : ''}
-            ${proj.demoUrl ? `<a href="${proj.demoUrl}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>` : ''}
-            <a href="#" class="view-details-btn" data-id="${proj.id}"><i class="fa-solid fa-circle-info"></i> Details</a>
+            ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Repository</a>` : ''}
           </div>
-
-          <div class="github-stats">
-            <span><i class="fa-regular fa-star"></i> ${proj.stars || 0}</span>
-            <span><i class="fa-solid fa-code-fork"></i> ${proj.forks || 0}</span>
-          </div>
-        </div>
-      </div>
-    `).join('');
-
-    // Attach event listeners for details modal
-    document.querySelectorAll('.view-details-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const id = btn.getAttribute('data-id');
-        openProjectModal(id);
-      });
-    });
-  }
-
-  // Render Achievements Timeline
-  function renderAchievements(achievements) {
-    const container = document.getElementById('achievements-timeline');
-    if (!container || !achievements) return;
-
-    container.innerHTML = achievements.map(item => `
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">${item.year}</span>
-          <h3>${item.title}</h3>
-          <div class="timeline-org">${item.organization}</div>
-          <p>${item.description}</p>
         </div>
       </div>
     `).join('');
@@ -142,102 +150,57 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPills('tools-list', skills.tools);
   }
 
-  // Modal Functionality
-  function openProjectModal(id) {
-    if (!portfolioData) return;
-    const proj = portfolioData.projects.find(p => p.id === id);
-    if (!proj) return;
+  // Photo Upload & Persistence Engine
+  function setupPhotoUpload() {
+    const photoInput = document.getElementById('photo-upload-input');
+    const photoImg = document.getElementById('profile-photo-img');
+    const placeholder = document.getElementById('avatar-placeholder');
 
-    const modalBody = document.getElementById('modal-body');
-    modalBody.innerHTML = `
-      <div style="margin-bottom: 20px;">
-        <span class="section-badge">${proj.category.toUpperCase()}</span>
-        <h2 style="font-size: 1.8rem; margin: 10px 0;">${proj.title}</h2>
-      </div>
+    if (!photoInput || !photoImg || !placeholder) return;
 
-      <div style="margin-bottom: 20px; font-size: 1rem; color: var(--text-muted); line-height: 1.6;">
-        ${proj.fullDescription}
-      </div>
+    // Check if photo exists in localStorage
+    const savedPhoto = localStorage.getItem('sampath_profile_photo');
+    if (savedPhoto) {
+      photoImg.src = savedPhoto;
+      photoImg.style.display = 'block';
+      placeholder.style.display = 'none';
+    }
 
-      <div class="project-tags" style="margin-bottom: 24px;">
-        ${proj.tags.map(t => `<span class="tech-tag" style="font-size: 0.85rem; padding: 4px 10px;">${t}</span>`).join('')}
-      </div>
-
-      ${proj.impact ? `
-        <div class="project-impact-box" style="margin-bottom: 24px; font-size: 0.95rem; padding: 12px 16px;">
-          <i class="fa-solid fa-bullseye"></i> <strong>Quantifiable Outcome:</strong> ${proj.impact}
-        </div>
-      ` : ''}
-
-      <div style="display: flex; gap: 16px; margin-top: 30px;">
-        ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Repository</a>` : ''}
-        ${proj.demoUrl ? `<a href="${proj.demoUrl}" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-external-link"></i> Live Demo</a>` : ''}
-      </div>
-    `;
-
-    document.getElementById('project-modal').classList.add('active');
-  }
-
-  // Setup Event Listeners
-  function setupEventListeners() {
-    // Modal Close
-    document.getElementById('modal-close').addEventListener('click', () => {
-      document.getElementById('project-modal').classList.remove('active');
-    });
-
-    document.getElementById('project-modal').addEventListener('click', (e) => {
-      if (e.target === document.getElementById('project-modal')) {
-        document.getElementById('project-modal').classList.remove('active');
+    photoInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          const dataUrl = event.target.result;
+          photoImg.src = dataUrl;
+          photoImg.style.display = 'block';
+          placeholder.style.display = 'none';
+          localStorage.setItem('sampath_profile_photo', dataUrl);
+        };
+        reader.readAsDataURL(file);
       }
     });
-
-    // Filtering
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const category = btn.getAttribute('data-filter');
-        filterProjects(category, document.getElementById('project-search').value);
-      });
-    });
-
-    // Search Bar Input
-    const searchInput = document.getElementById('project-search');
-    searchInput.addEventListener('input', (e) => {
-      const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
-      filterProjects(activeFilter, e.target.value);
-    });
-
-    // Theme Toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('light-theme');
-      const isLight = document.body.classList.contains('light-theme');
-      themeToggle.innerHTML = isLight ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-    });
   }
 
-  // Filter Projects Logic
-  function filterProjects(category, query) {
-    if (!portfolioData) return;
-
-    let filtered = portfolioData.projects;
-
-    if (category !== 'all') {
-      filtered = filtered.filter(p => p.category === category);
+  // Setup Global Event Listeners
+  function setupEventListeners() {
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('light-theme');
+        const isLight = document.body.classList.contains('light-theme');
+        themeToggle.innerHTML = isLight ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+      });
     }
 
-    if (query.trim() !== '') {
-      const q = query.toLowerCase();
-      filtered = filtered.filter(p => 
-        p.title.toLowerCase().includes(q) ||
-        p.shortDescription.toLowerCase().includes(q) ||
-        p.tags.some(t => t.toLowerCase().includes(q))
-      );
+    // Mobile Navigation Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-active');
+      });
     }
-
-    renderProjects(filtered);
   }
 });
