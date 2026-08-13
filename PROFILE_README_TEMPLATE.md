@@ -10,18 +10,25 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 
 # Hi, I'm Sampathkumar N 👋
 ### B.E. Computer Science & Engineering (AI & ML) | Class of 2027
-**AI Researcher & Multi-Patent Co-Inventor | Targeted US MS Candidate (Fall 2027)**
+**Multi-Patent Co-Inventor & AI Researcher | Class Topper (Sem 6 GPA: 9.45 | Sem 1 GPA: 9.2)**
 
 [![Portfolio Website](https://img.shields.io/badge/🌐_Portfolio-Live_Site-6366f1?style=for-the-badge)](https://sam-creates-projects.github.io/portfolio)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-sam--creates--projects-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sam-creates-projects)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sampathkumar-n)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sampathk.nataraj@gmail.com)
 
 ---
 
 </div>
 
-## 📜 Patents & Intellectual Property
+## 🏆 Academic Excellence & Class Topper Distinctions
+- 🥇 **6th Semester Class Topper:** Achieved a peak **9.45 GPA** in 6th Semester (O Grade in AI for Edge Computing, A+ in Deep Learning & Web Tech).
+- 🥇 **1st Semester Class Topper:** Achieved a **9.2 GPA** in 1st Semester (O Grade in Python Programming, Matrices & Calculus, and all Labs).
+- 🎯 **12th Grade Computer Science Peak:** Scored **99 / 100 in Computer Science** in 12th Grade.
+
+---
+
+## 📜 Patents & Intellectual Property (3 Filed Patents)
 
 1. 🏛️ **Patent 1:** *"Generative Artificial Intelligence System for Terrain-Constrained Reconstruction of Historical Geography"* (**GeoMemory+ Framework**)
    - **Status:** **Patent Filed**
@@ -44,7 +51,7 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 ---
 
 ## 🔬 About Me & Academic Vision
-- 🎓 **Education:** Pursuing B.E. in CSE with Specialization in **AI & Machine Learning** (Graduating May 2027).
+- 🎓 **Education:** Pursuing B.E. in CSE with Specialization in **AI & Machine Learning** at Easwari Engineering College (SRM Group), Chennai (Graduating May 2027).
 - 🎯 **Primary Goal:** Securing admission to top US Master's programs with **Graduate Research Assistantships (RA)**.
 - 🧪 **Research Core:** Vision-Language Models (VLMs), Geospatial AI, EdTech Adaptive AI, Climate AI, Time Series Anomaly Detection, and MLOps.
 
