@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchData() {
     try {
-      const response = await fetch('projects_data.json');
+      const response = await fetch('projects_data.json?v=' + Date.now());
       portfolioData = await response.json();
       
       populateProfile(portfolioData.profile);
+      populateResearchTags(portfolioData.researchInterests);
       renderPatents(portfolioData.patents);
       renderAcademicTimeline(portfolioData.academicTimeline);
       renderProjects(portfolioData.projects);
@@ -38,6 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (profile.github && document.getElementById('github-link')) document.getElementById('github-link').href = profile.github;
     if (profile.linkedin && document.getElementById('linkedin-link')) document.getElementById('linkedin-link').href = profile.linkedin;
     if (profile.email && document.getElementById('email-link')) document.getElementById('email-link').href = `mailto:${profile.email}`;
+  }
+
+  // Populate Research Interest Tags
+  function populateResearchTags(interests) {
+    const container = document.getElementById('research-tags');
+    if (!container || !interests) return;
+    container.innerHTML = interests.map(item => `
+      <span class="chip-tag"><i class="fa-solid fa-brain"></i> ${item}</span>
+    `).join('');
   }
 
   // Render 3 Filed Patents Grid
