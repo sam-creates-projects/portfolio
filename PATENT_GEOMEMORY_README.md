@@ -8,57 +8,97 @@
 ## 📌 Patent Summary & Metadata
 
 - **Invention Title:** Generative Artificial Intelligence System for Terrain-Constrained Reconstruction of Historical Geography (`GeoMemory+`)
-- **Inventors:** **Sampath Kumar**, et al.
+- **Inventors:** **Sampathkumar N**, Duranjai V, Mr. Ilamurugan G
 - **Primary Domain:** AI & Geospatial Machine Learning, Diffusion Models, Remote Sensing, Digital Elevation Modeling (DEM), Hydrological Conditioning
 - **Target Applications:** Climate change impact assessment, historical landscape evolution, disaster risk assessment, urban planning & paleogeography.
 
 ---
 
-## 💡 Abstract & Core Innovation
-
-Conventional geographic reconstruction relies on manual GIS analysis or unconstrained generative models that synthesize visually realistic landscapes but lack **topographic continuity and physical plausibility**.
-
-**GeoMemory+** introduces a multi-stage **terrain-constrained generative AI architecture** (incorporating Diffusion Models / GANs) that ingests satellite imagery and Digital Elevation Models (DEM) to synthesize historical or altered landscapes (river migration, coastal erosion, past vegetation zones). 
-
-The system incorporates:
-1. **Terrain-Aware Learning Constraints:** Conditioned on slope gradients, watershed flow directions, and topographic elevation continuity to prevent physically impossible geography.
-2. **Uncertainty Estimation Mechanism:** Evaluates pixel-level confidence across generated landscape samples by calculating variance across multiple stochastic passes.
-
----
-
-## 🏛️ System Architecture (`GeoMemory+`)
+## 🏛️ Official GeoMemory+ System Architecture (Fig .1)
 
 ```mermaid
 graph TD
-    A[Satellite Imagery & DEM Sources] --> B[Geospatial Acquisition Layer 101]
-    B --> C[Preprocessing & Feature Extraction 102]
-    
-    subgraph Feature Conditioning Pipeline
-        C --> C1[Elevation Gradients]
-        C --> C2[Slope Maps]
-        C --> C3[Hydrological Pathways]
+    subgraph Layer101["[101] GEOSPATIAL DATA SOURCES"]
+        A1[Satellite Imagery Sources]
+        A2[Historical Maps & Records]
+        A3[Digital Elevation Model DEM Data]
+        A4[Archaeological / Survey Data]
+        A5[Climate / Terrain Data]
     end
 
-    C1 --> D[Terrain-Constrained Learning Layer 104]
-    C2 --> D
-    C3 --> D
+    A1 -->|Raw Geospatial Data| Layer102
+    A2 -->|Raw Geospatial Data| Layer102
+    A3 -->|Raw Geospatial Data| Layer102
+    A4 -->|Raw Geospatial Data| Layer102
+    A5 -->|Raw Geospatial Data| Layer102
 
-    D -->|Topographic Guidance Parameters| E[AI-Based Generative Engine 103]
-    C -->|Normalised Images| E
+    subgraph Layer102["[102] DATA PREPROCESSING & ALIGNMENT"]
+        B1[Geo-referencing Engine]
+        B2[DEM Normalization]
+        B3[Image Preprocessing]
+        B4[Historical Data Alignment]
+        B5[Terrain Feature Extraction]
+    end
 
-    E -->|Diffusion / GAN Synthesis| F[Reconstructed Landscape]
+    Layer102 -->|Processed Terrain-Aligned Dataset| Layer103
 
-    F --> G[Uncertainty Estimation Module 106]
-    G -->|Variance Analysis & Confidence Heatmap| H[Visualization & Analysis Dashboard 105]
+    subgraph Layer103["[103] GEOMEMORY+ GENERATIVE RECONSTRUCTION ENGINE"]
+        C1[Time-Depth Conditioning Module]
+        C2[Diffusion-based Terrain Generator]
+        C3[Terrain-Physics Constraint Model]
+        C4[Multi-Sample Monte-Carlo Generator]
+        C5[Reconstruction Scoring System]
+    end
+
+    Layer103 -->|Reconstructed Historical Landscape & Simulation Outputs| Layer104
+    Layer103 -.->|Updated Models| Layer107
+
+    subgraph Layer104["[104] UNCERTAINTY & VALIDATION LAYER"]
+        D1[Uncertainty Heatmap Generator]
+        D2[Variance Analysis Module]
+        D3[Historical Evidence Matching]
+        D4[Terrain Consistency Validator]
+    end
+
+    Layer104 -->|Confidence Map & Reliability Score| Layer105
+
+    subgraph Layer105["[105] USER INTERACTION LAYER"]
+        E1[Region Selection Interface]
+        E2[Time-Depth Selection]
+        E3[Visualization Panel]
+        E4[Input Evidence Upload]
+    end
+
+    Layer105 --> Layer106
+
+    subgraph Layer106["[106] VISUALIZATION & ANALYTICS DASHBOARD"]
+        F1[Map Overlay Comparison]
+        F2[GeoBrief AI Explanation]
+        F3[3D Terrain Reconstruction Viewer]
+        F4[Analytical Reports]
+        F5[Downloadable Reconstruction Data]
+    end
+
+    Layer106 -->|Feedback| Layer107
+
+    subgraph Layer107["[107] MODEL LEARNING & IMPROVEMENT"]
+        G1[Model Training Module]
+        G2[Reinforcement Feedback Loop]
+        G3[Global Terrain Knowledge Base]
+        G4[Historical Dataset Expansion]
+    end
+
+    Layer107 -.->|Model Refinement Loop| Layer103
 ```
 
 ---
 
 ## 📑 Claims & Technical Novelty
 
-1. **Terrain-Constrained Conditioning (Claim 1 & 4):** Utilizes slope continuity, watershed flow directions, and topographic elevation patterns as conditioning loss vectors during generative diffusion sampling.
-2. **Spatial Uncertainty Quantifier (Claim 5):** Computes pixel-wise spatial confidence metrics by analyzing variance across multiple stochastic sampling iterations.
-3. **Multi-Scale Hydrological Realism (Claim 9):** Automatically infers historical river courses, coastline retreat, and vegetation shifts without requiring manual physical simulations.
+1. **Multi-Source Geospatial Fusion Layer (101 & 102):** Merges satellite remote sensing imagery, DEM elevation models, historical maps, and survey records.
+2. **Terrain-Physics Constrained Generative Synthesis (103):** Integrates time-depth conditioning and physical terrain constraints into diffusion sampling and Monte-Carlo generation.
+3. **Uncertainty & Consistency Validation (104):** Computes pixel-wise spatial uncertainty heatmaps and validates terrain consistency via multi-sample variance analysis.
+4. **Interactive Analytics & Continuous Learning (105, 106 & 107):** Features 3D terrain viewers, GeoBrief AI explanations, downloadable datasets, and reinforcement feedback loops.
 
 ---
 
@@ -66,11 +106,11 @@ graph TD
 
 ```bibtex
 @patent{kumar2026geomemory,
-  author = {Kumar, Sampath and Co-inventors},
-  title = {Generative Artificial Intelligence System for Terrain-Constrained Reconstruction of Historical Geography},
-  year = {2026},
-  holder = {Sampath Kumar},
-  note = {Patent Document: GeoMemory+ System}
+  author    = {Sampathkumar, N. and Duranjai, V. and Ilamurugan, G.},
+  title     = {Generative Artificial Intelligence System for Terrain-Constrained Reconstruction of Historical Geography},
+  year      = {2026},
+  note      = {Patent Filed. System Architecture: GeoMemory+ (Fig .1)},
+  publisher = {Intellectual Property Office}
 }
 ```
 
@@ -79,6 +119,6 @@ graph TD
 <div align="center">
 
 **Documented for US Graduate Admissions & Academic Faculty Review**  
-*Sampath Kumar | B.E. Computer Science & Engineering (AI & ML) '27*
+*Sampathkumar N | B.E. Computer Science & Engineering (AI & ML) '27*
 
 </div>
