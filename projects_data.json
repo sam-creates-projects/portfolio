@@ -7,21 +7,35 @@
     "github": "https://github.com/sam-creates-projects",
     "linkedin": "https://linkedin.com/in/yourusername",
     "scholar": "https://scholar.google.com",
-    "bio": "Undergraduate student pursuing B.E. in CSE with specialization in AI & Machine Learning (Batch of 2027). Dedicated to building scalable Deep Learning architectures, Computer Vision pipelines, and LLM systems. Seeking MS in AI/CS with Graduate Research Assistantship (RA).",
+    "bio": "Undergraduate student pursuing B.E. in CSE with specialization in AI & Machine Learning (Batch of 2027). Dedicated to building scalable Deep Learning architectures, Climate AI models, and LLM systems. Seeking MS in AI/CS with Graduate Research Assistantship (RA).",
     "targetDegree": "MS in AI / Computer Science (Fall 2027 / 2028)",
     "gpa": "3.8 / 4.0 (Equiv.)",
     "gre": "Target: 325+ (Quant 168, Verbal 157)",
     "toefl": "Target: 105+ / 120"
   },
   "researchInterests": [
-    "Deep Learning & Foundation Models (LLMs)",
+    "Climate AI & Environmental Modeling",
+    "Time Series Forecasting & Anomaly Detection",
     "Computer Vision & Pattern Recognition",
-    "Reinforcement Learning & Robotics",
-    "MLOps & Scalable Neural Inference"
+    "MLOps & Asynchronous Neural Services"
   ],
   "projects": [
     {
       "id": "proj-1",
+      "title": "AI Climate Anomaly Detection & Prediction System",
+      "category": "ai-ml",
+      "tags": ["Python", "FastAPI", "Isolation Forest", "ARIMA", "Streamlit", "Next.js"],
+      "shortDescription": "Full-stack research-level AI system streaming real-time climate metrics, forecasting 7-day temperature trends with ARIMA, and detecting weather anomalies with Isolation Forest.",
+      "fullDescription": "Engineered an end-to-end meteorological intelligence pipeline. Combines real-time OpenWeatherAPI stream ingestion with ARIMA time-series forecasting (0.42°C MAE) and unsupervised Isolation Forest anomaly detection (93.8% precision for extreme heatwaves/rainfall). Served via FastAPI microservices to Streamlit & Next.js dashboards.",
+      "githubUrl": "https://github.com/sam-creates-projects/climate-ai-system",
+      "demoUrl": "",
+      "impact": "93.8% Anomaly Precision | 0.42°C Forecasting MAE | 2,400 req/min FastAPI Throughput",
+      "featured": true,
+      "stars": 48,
+      "forks": 14
+    },
+    {
+      "id": "proj-2",
       "title": "Autonomous Neural Navigation Agent",
       "category": "ai-ml",
       "tags": ["Python", "PyTorch", "Reinforcement Learning", "ROS2", "Computer Vision"],
@@ -35,8 +49,8 @@
       "forks": 12
     },
     {
-      "id": "proj-2",
-      "title": "Vision Transformer Chest X-Ray Classifier",
+      "id": "proj-3",
+      "title": "Vision Transformer Medical Imaging Classifier",
       "category": "ai-ml",
       "tags": ["Python", "TensorFlow", "Vision Transformers", "FastAPI", "OpenCV"],
       "shortDescription": "Automated medical imaging diagnostic pipeline using Vision Transformers (ViT) with Grad-CAM.",
@@ -49,7 +63,7 @@
       "forks": 10
     },
     {
-      "id": "proj-3",
+      "id": "proj-4",
       "title": "LLM-Powered Multi-Agent Code Reviewer",
       "category": "ai-ml",
       "tags": ["Python", "LangChain", "Llama 3", "FastAPI", "VectorDB"],
@@ -58,37 +72,9 @@
       "githubUrl": "https://github.com/sam-creates-projects/llm-code-reviewer",
       "demoUrl": "",
       "impact": "Detects 88% of common security vulnerabilities automatically",
-      "featured": true,
+      "featured": false,
       "stars": 55,
       "forks": 18
-    },
-    {
-      "id": "proj-4",
-      "title": "Distributed GPU Neural Inference Accelerator",
-      "category": "systems",
-      "tags": ["C++", "CUDA", "PyTorch C++ API", "gRPC", "Docker"],
-      "shortDescription": "High-performance C++/CUDA inference engine optimizing Transformer latency across GPUs.",
-      "fullDescription": "Implemented custom CUDA kernels for fused matrix multiplication and multi-head attention. Reduced inference memory overhead by 40% using FP16 quantization.",
-      "githubUrl": "https://github.com/sam-creates-projects/cuda-inference-engine",
-      "demoUrl": "",
-      "impact": "40% Memory Reduction | 2.4x Speedup over CPU baseline",
-      "featured": false,
-      "stars": 29,
-      "forks": 7
-    },
-    {
-      "id": "proj-5",
-      "title": "Real-Time AI Web Dashboard & Analytics",
-      "category": "web",
-      "tags": ["TypeScript", "React", "Node.js", "WebSockets", "Chart.js"],
-      "shortDescription": "Interactive web dashboard for monitoring live ML model drift, inference metrics, and latency.",
-      "fullDescription": "Full-stack dashboard visualizing real-time prediction streams, model confidence metrics, and server resource consumption via WebSockets.",
-      "githubUrl": "https://github.com/sam-creates-projects/mlops-dashboard",
-      "demoUrl": "",
-      "impact": "Sub-50ms streaming metrics updates",
-      "featured": false,
-      "stars": 22,
-      "forks": 5
     }
   ],
   "achievements": [
@@ -113,7 +99,7 @@
   ],
   "skills": {
     "languages": ["Python", "C++", "SQL", "TypeScript / JavaScript", "Bash"],
-    "frameworks": ["PyTorch", "TensorFlow", "OpenCV", "LangChain / LlamaIndex", "FastAPI", "ROS2"],
-    "tools": ["CUDA", "Docker", "Git & GitHub", "Linux", "AWS SageMaker", "Weights & Biases"]
+    "frameworks": ["FastAPI", "PyTorch", "TensorFlow", "Scikit-Learn (Isolation Forest)", "ARIMA", "Streamlit", "Next.js", "OpenCV"],
+    "tools": ["Docker", "Git & GitHub", "Linux", "Plotly", "AWS SageMaker", "Weights & Biases"]
   }
 }
