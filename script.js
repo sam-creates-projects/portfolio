@@ -168,9 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!photoInput || !photoImg || !placeholder) return;
 
-    // Force profile.jpg as default photo
+    // Force profile1.jpg as default photo
     localStorage.removeItem('sampath_profile_photo');
-    photoImg.src = 'profile.jpg?v=' + Date.now();
+    photoImg.src = 'profile1.jpg?v=' + Date.now();
     photoImg.style.display = 'block';
     placeholder.style.display = 'none';
 
