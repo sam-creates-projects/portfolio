@@ -8,9 +8,11 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/sam-creates-projects/portfolio/main/profile.jpg" alt="Sampathkumar N" width="160" height="160" style="border-radius: 50%; border: 3px solid #6366f1; object-fit: cover;" />
+
 # Hi, I'm Sampathkumar N 👋
 ### B.E. Computer Science & Engineering (AI & ML) | Class of 2027
-**Multi-Patent Co-Inventor & AI Researcher | Class Topper (Sem 6 GPA: 9.45 | Sem 1 GPA: 9.2)**
+**Multi-Patent Co-Inventor & AI Researcher | Class Topper (Sem 6 GPA: 9.45 | Sem 1 Topper)**
 
 [![Portfolio Website](https://img.shields.io/badge/🌐_Portfolio-Live_Site-6366f1?style=for-the-badge)](https://sam-creates-projects.github.io/portfolio)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-sam--creates--projects-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sam-creates-projects)
@@ -22,8 +24,8 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 </div>
 
 ## 🏆 Academic Excellence & Class Topper Distinctions
-- 🥇 **6th Semester Class Topper:** Achieved a peak **9.45 GPA** in 6th Semester (O Grade in AI for Edge Computing, A+ in Deep Learning & Web Tech).
-- 🥇 **1st Semester Class Topper:** Achieved a **9.2 GPA** in 1st Semester (O Grade in Python Programming, Matrices & Calculus, and all Labs).
+- 🥇 **6th Semester Class Topper (9.45 GPA):** Achieved a peak **9.45 GPA** in 6th Semester (O Grade in AI for Edge Computing, A+ in Deep Learning & Web Tech).
+- 🥇 **1st Semester Class Topper (9.20 GPA):** Recognized as Class Topper in 1st Semester among a select few top achievers in the class (O Grade in Python Programming, Matrices & Calculus, and all Labs).
 - 🎯 **12th Grade Computer Science Peak:** Scored **99 / 100 in Computer Science** in 12th Grade.
 
 ---
