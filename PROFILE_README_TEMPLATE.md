@@ -1,6 +1,6 @@
 <!-- 
 ==============================================================================
-TOP-TIER GITHUB PROFILE README (username/username)
+TOP-TIER GITHUB PROFILE README (sam-creates-projects/sam-creates-projects)
 Customized for B.E. CSE (AI & ML) - Class of 2027
 Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 ==============================================================================
@@ -12,10 +12,10 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 ### B.E. Computer Science & Engineering (AI & ML) | Class of 2027
 **Aspiring AI Researcher & Systems Engineer | Targeted US MS Candidate (Fall 2027)**
 
-[![Portfolio Website](https://img.shields.io/badge/🌐_Portfolio-Live_Site-6366f1?style=for-the-badge)](https://yourportfolio.com)
+[![Portfolio Website](https://img.shields.io/badge/🌐_Portfolio-Live_Site-6366f1?style=for-the-badge)](https://sam-creates-projects.github.io/portfolio)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-sam--creates--projects-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sam-creates-projects)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![Resume](https://img.shields.io/badge/📄_Academic_CV-PDF-10b981?style=for-the-badge)](#)
 
 ---
 
@@ -31,12 +31,12 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 
 ## 🌟 Featured Projects (High-Impact Implementations)
 
-| Project | Domain & Stack | Highlights & Metrics | Code / Demo |
+| Project | Domain & Stack | Highlights & Metrics | Code / Repo |
 | :--- | :--- | :--- | :---: |
-| 🤖 **Autonomous Neural Navigation Agent** | PyTorch, ROS2, Reinforcement Learning, Gazebo | **94.2% Success Rate** across 500 benchmark obstacle runs. 35% latency reduction. | [Code](https://github.com/yourusername/neural-navigation-agent) |
-| 👁️ **Vision Transformer Medical Classifier** | TensorFlow, ViT, FastAPI, Grad-CAM | **0.91 ROC-AUC** on MIMIC-CXR dataset (100k+ images) with visual heatmaps. | [Code](https://github.com/yourusername/medical-imaging-vit) |
-| 🧠 **LLM Multi-Agent Code Auditor** | Python, LangChain, Llama 3, VectorDB | **88% vulnerability detection rate** on automated PR code audits. | [Code](https://github.com/yourusername/llm-code-reviewer) |
-| ⚡ **CUDA GPU Inference Accelerator** | C++, CUDA, PyTorch C++ API, Docker | **40% Memory Reduction** & 2.4x speedup over CPU baselines. | [Code](https://github.com/yourusername/cuda-inference-engine) |
+| 🤖 **Autonomous Neural Navigation Agent** | PyTorch, ROS2, Reinforcement Learning, Gazebo | **94.2% Success Rate** across 500 benchmark obstacle runs. 35% latency reduction. | [Code](https://github.com/sam-creates-projects/neural-navigation-agent) |
+| 👁️ **Vision Transformer Medical Classifier** | TensorFlow, ViT, FastAPI, Grad-CAM | **0.91 ROC-AUC** on MIMIC-CXR dataset (100k+ images) with visual heatmaps. | [Code](https://github.com/sam-creates-projects/medical-imaging-vit) |
+| 🧠 **LLM Multi-Agent Code Auditor** | Python, LangChain, Llama 3, VectorDB | **88% vulnerability detection rate** on automated PR code audits. | [Code](https://github.com/sam-creates-projects/llm-code-reviewer) |
+| ⚡ **CUDA GPU Inference Accelerator** | C++, CUDA, PyTorch C++ API, Docker | **40% Memory Reduction** & 2.4x speedup over CPU baselines. | [Code](https://github.com/sam-creates-projects/cuda-inference-engine) |
 
 ---
 
@@ -73,8 +73,8 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-languages/?username=yourusername&layout=compact&theme=tokyonight&hide_border=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=sam-creates-projects&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-languages/?username=sam-creates-projects&layout=compact&theme=tokyonight&hide_border=true" />
 
 </div>
 
@@ -82,6 +82,6 @@ Target: US University Admissions, Professors (RA/TA), and Top Tech Recruiters
 
 <div align="center">
 
-**[🌐 Visit My Full Academic & Engineering Portfolio Website](https://yourportfolio.com)**
+**[🌐 Visit My Academic & Engineering Portfolio Website](https://sam-creates-projects.github.io/portfolio)**
 
 </div>
