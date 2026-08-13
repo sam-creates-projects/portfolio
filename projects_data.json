@@ -3,23 +3,25 @@
     "name": "Sampathkumar N",
     "title": "B.E. CSE (AI & ML) '27 | Multi-Patent Co-Inventor & AI Researcher",
     "institution": "Easwari Engineering College (SRM Group), Chennai",
-    "location": "Chennai, Tamil Nadu, India | Target: US MS in AI / CS (Fall 2027)",
+    "location": "Chennai, Tamil Nadu, India | Target: MS in CS / AI & Machine Learning (Fall 2027)",
     "email": "sampathk.nataraj@gmail.com",
     "github": "https://github.com/sam-creates-projects",
     "linkedin": "https://www.linkedin.com/in/sampathkumar-n",
     "scholar": "https://scholar.google.com",
-    "bio": "Undergraduate student pursuing B.E. in Computer Science & Engineering (AI & ML) at Easwari Engineering College (SRM Group). Class Topper in 6th Sem (9.45 GPA) and 1st Sem Topper among a select few top achievers. Co-inventor of 3 filed AI patents in Geospatial AI, Adaptive EdTech, and Egocentric Vision-Language Models. Passionate about AI & software engineering since 10th grade (Scored 99/100 in 12th CS). Targeted US MS Candidate seeking Graduate Assistantships (RA/TA).",
-    "targetDegree": "MS in AI / Computer Science (Fall 2027 / 2028)",
+    "bio": "Undergraduate student pursuing B.E. in Computer Science & Engineering (AI & ML) at Easwari Engineering College (SRM Group). Class Topper in 6th Sem (9.45 GPA) and 1st Sem Topper among a select few top achievers. Co-inventor of 3 filed AI patents in Geospatial AI, Adaptive EdTech, and Egocentric Vision-Language Models. Targeted candidate for MS in Computer Science / AI & ML with Graduate Assistantships (RA/TA).",
+    "targetDegree": "MS in Computer Science / AI & ML (Fall 2027)",
     "gpa": "Class Topper (9.45 & 9.20 GPA)",
     "cs12Score": "99 / 100 in Computer Science (12th Grade)",
     "gre": "Target: 325+ (Quant 168, Verbal 157)",
     "toefl": "Target: 105+ / 120"
   },
   "researchInterests": [
-    "Vision-Language Models (VLMs) & Egocentric Video",
-    "Geospatial AI & Diffusion Models (DEM Conditioning)",
-    "Multilingual LLM Agents & Adaptive EdTech Scoring",
-    "Climate AI & Environmental Anomaly Detection"
+    "Computer Vision & Pattern Recognition",
+    "Natural Language Processing & LLMs",
+    "Deep Learning & Generative Diffusion Models",
+    "Reinforcement Learning & Neural Navigation",
+    "Geospatial AI & Remote Sensing",
+    "Machine Learning Systems & MLOps"
   ],
   "academicTimeline": [
     {
