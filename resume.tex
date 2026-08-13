@@ -1,6 +1,6 @@
 %-------------------------------------------------------------------------------
 % Academic & Research Resume Template (US Graduate Admissions & RA/TA Focus)
-% Compatible with Overleaf / pdfLaTeX
+% Customized for B.E. CSE (AI & ML) - Class of 2027
 %-------------------------------------------------------------------------------
 \documentclass[letterpaper,11pt]{article}
 
@@ -22,7 +22,6 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -34,7 +33,6 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\vline height 1.5pt width \textwidth \vspace{-5pt}]
@@ -44,8 +42,8 @@
 
 %----------HEADING----------
 \begin{center}
-    {\Huge \scshape Your Name} \\ \vspace{2pt}
-    \small +91 98765 43210 $|$ \href{mailto:your.email@example.com}{your.email@example.com} $|$ 
+    {\Huge \scshape Sampath Kumar} \\ \vspace{2pt}
+    \small +91 XXXXX XXXXX $|$ \href{mailto:your.email@example.com}{your.email@example.com} $|$ 
     \href{https://linkedin.com/in/yourusername}{linkedin.com/in/yourusername} $|$
     \href{https://github.com/yourusername}{github.com/yourusername}
 \end{center}
@@ -55,8 +53,8 @@
   \begin{itemize}[leftmargin=0.15in, label={}]
     \item
       \begin{tabularx}{\linewidth}{X r}
-        \textbf{Your University / Institute Name} & City, Country \\
-        Bachelor of Technology in Computer Science \& Engineering & \textit{Aug 2021 -- May 2025} \\
+        \textbf{Your College / University Name} & City, Country \\
+        Bachelor of Engineering (B.E.) in Computer Science \& Engineering (AI \& ML) & \textit{Aug 2023 -- May 2027} \\
         \textit{GPA/CGPA: 8.8 / 10.0 (Equivalent to 3.8 / 4.0)} & \\
       \end{tabularx}
   \end{itemize}
@@ -65,83 +63,74 @@
 \section{Research Interests}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      Distributed Systems, Cloud Architecture, Reinforcement Learning, Computer Vision, High-Performance Computing.
+      Deep Learning & Foundation Models (LLMs), Computer Vision, Reinforcement Learning, MLOps \& Neural Inference Acceleration.
     }}
   \end{itemize}
 
-%----------PUBLICATIONS----------
-\section{Publications \& Preprints}
-  \begin{enumerate}[leftmargin=0.2in]
-    \item \textbf{Your Name}, Co-author Name, Advisor Name. "Optimized Distributed Inference on Heterogeneous Edge Clusters." \textit{IEEE International Conference on Smart Computing (SMARTCOMP)}, 2024.
-  \end{enumerate}
-
-%----------TECHNICAL PROJECTS----------
-\section{Key Technical Projects}
+%----------KEY TECHNICAL & AI/ML PROJECTS----------
+\section{Key Technical & AI/ML Projects}
   \begin{itemize}[leftmargin=0.15in, label={}]
     
     \item
       \begin{tabularx}{\linewidth}{X r}
-        \textbf{Autonomous Neural Navigation Agent} $|$ \emph{PyTorch, ROS2, Python, Reinforcement Learning} & \href{https://github.com/yourusername/neural-navigation-agent}{\underline{GitHub Repo}} \\
+        \textbf{Autonomous Neural Navigation Agent} $|$ \emph{PyTorch, ROS2, Reinforcement Learning, OpenCV} & \href{https://github.com/yourusername/neural-navigation-agent}{\underline{GitHub Repo}} \\
       \end{tabularx}
       \begin{itemize}[leftmargin=0.2in]
-        \item Trained Soft Actor-Critic (SAC) reinforcement learning agent for mobile robot obstacle avoidance in Gazebo.
-        \item Achieved \textbf{94.2\% success rate} across 500 randomized obstacle benchmarks; reduced navigation latency by 35\%.
+        \item Trained Soft Actor-Critic (SAC) reinforcement learning agent for mobile robot navigation in Gazebo simulator.
+        \item Achieved \textbf{94.2\% success rate} across 500 benchmark runs; reduced path planning latency by 35\%.
       \end{itemize}
       \vspace{-3pt}
 
     \item
       \begin{tabularx}{\linewidth}{X r}
-        \textbf{Distributed Multi-Tenant Task Orchestrator} $|$ \emph{Go, gRPC, Docker, Raft Consensus} & \href{https://github.com/yourusername/distributed-task-orchestrator}{\underline{GitHub Repo}} \\
+        \textbf{Vision Transformer Medical Imaging Classifier} $|$ \emph{TensorFlow, ViT, FastAPI, Grad-CAM} & \href{https://github.com/yourusername/medical-imaging-vit}{\underline{GitHub Repo}} \\
       \end{tabularx}
       \begin{itemize}[leftmargin=0.2in]
-        \item Built fault-tolerant distributed scheduler in Go implementing Raft protocol for cluster state synchronization.
-        \item Handled \textbf{10,000+ operations/sec} with automatic leader election and failover recovery in under 5ms.
+        \item Developed Vision Transformer (ViT) model on MIMIC-CXR dataset (100k+ X-rays) for automated chest diagnostic.
+        \item Achieved \textbf{0.91 ROC-AUC score}; deployed FastAPI backend rendering Grad-CAM visual feature maps.
       \end{itemize}
       \vspace{-3pt}
 
     \item
       \begin{tabularx}{\linewidth}{X r}
-        \textbf{Real-Time Collaborative Code Editor} $|$ \emph{React, Node.js, WebSockets, CRDTs} & \href{https://github.com/yourusername/collab-code-editor}{\underline{Live Demo}} \\
+        \textbf{LLM Multi-Agent Code Auditor} $|$ \emph{Python, LangChain, Llama 3, VectorDB} & \href{https://github.com/yourusername/llm-code-reviewer}{\underline{GitHub Repo}} \\
       \end{tabularx}
       \begin{itemize}[leftmargin=0.2in]
-        \item Implemented sub-50ms conflict-free replicated data type (CRDT) engine for simultaneous multi-user document editing.
-        \item Scaled system to support \textbf{50 concurrent active editors} per workspace without synchronization drift.
+        \item Implemented autonomous multi-agent pipeline using quantized Llama 3 for automated git pull request code auditing.
+        \item Automatically identified \textbf{88\% of security vulnerabilities} and memory leaks across test codebases.
       \end{itemize}
 
   \end{itemize}
 
-%----------WORK / RESEARCH EXPERIENCE----------
-\section{Work \& Research Experience}
+%----------RESEARCH EXPERIENCE / INTERNSHIPS----------
+\section{Research Experience \& Internships}
   \begin{itemize}[leftmargin=0.15in, label={}]
-    
     \item
       \begin{tabularx}{\linewidth}{X r}
-        \textbf{Undergraduate Research Fellow} & \textit{May 2024 -- Present} \\
-        \textit{Department of Computer Science, Your University} & City, Country \\
+        \textbf{Undergraduate AI Research Intern} & \textit{May 2025 -- Present} \\
+        \textit{AI & Deep Learning Lab, Department of CSE (AI & ML)} & City, Country \\
       \end{tabularx}
       \begin{itemize}[leftmargin=0.2in]
-        \item Investigated distributed consensus protocol latency under lossy network topology under guidance of Dr. Advisor.
-        \item Benchmarked network throughput using custom Go micro-benchmarks across AWS EC2 instances.
+        \item Researched neural network quantization techniques (INT8/FP16) for edge vision deployment.
+        \item Benchmarked latency vs accuracy trade-offs across embedded GPU architectures.
       \end{itemize}
-
   \end{itemize}
 
-%----------HONORS \& AWARDS----------
+%----------HONORS & AWARDS----------
 \section{Honors \& Awards}
   \begin{itemize}[leftmargin=0.15in, label={}]
-    \item \textbf{1st Rank / Winner}: National Hackathon 2025 out of 350+ competing teams.
-    \item \textbf{Department Merit Scholarship}: Awarded 100\% tuition waiver for top 1\% academic ranking (2023, 2024).
+    \item \textbf{1st Rank Winner}: College AI & ML Department Innovation Hackathon (2026).
+    \item \textbf{Department Academic Merit Award}: Recognized among top performers in B.E. CSE (AI & ML).
   \end{itemize}
 
-%----------SKILLS----------
+%----------TECHNICAL SKILLS----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C++, Go, TypeScript, JavaScript, SQL, Bash} \\
-     \textbf{Frameworks \& Libraries}{: PyTorch, TensorFlow, React.js, FastAPI, Node.js, ROS2} \\
-     \textbf{Cloud \& DevOps}{: Docker, Kubernetes, Terraform, Git, Linux/Unix, AWS}
+     \textbf{Languages}{: Python, C++, SQL, TypeScript, JavaScript, Bash} \\
+     \textbf{AI/ML Frameworks}{: PyTorch, TensorFlow, OpenCV, LangChain, LlamaIndex, FastAPI, ROS2} \\
+     \textbf{MLOps & Tools}{: CUDA, Docker, Git, Linux/Unix, AWS SageMaker, Weights & Biases}
     }}
  \end{itemize}
 
-%-------------------------------------------------------------------------------
 \end{document}
