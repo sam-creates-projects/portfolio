@@ -543,31 +543,32 @@ a:hover {
   color: var(--text-main);
 }
 
-.chip-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.18) 0%, rgba(139, 92, 246, 0.12) 100%);
-  border: 1px solid rgba(99, 102, 241, 0.4);
-  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.15);
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #ffffff;
-  transition: var(--transition);
+.tag, .chip-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: rgba(99, 102, 241, 0.18) !important;
+  border: 1px solid rgba(99, 102, 241, 0.4) !important;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.15) !important;
+  padding: 6px 14px !important;
+  border-radius: 9999px !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  margin: 2px !important;
+  transition: all 0.2s ease !important;
 }
 
 .chip-tag i {
-  color: var(--primary);
-  font-size: 0.9rem;
+  color: #818cf8 !important;
+  font-size: 0.85rem !important;
 }
 
 .chip-tag:hover {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.35) 0%, rgba(236, 72, 153, 0.25) 100%);
-  border-color: var(--primary);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
+  background: rgba(99, 102, 241, 0.35) !important;
+  border-color: #6366f1 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35) !important;
 }
 
 .funding-objective {
