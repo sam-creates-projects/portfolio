@@ -158,13 +158,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!photoInput || !photoImg || !placeholder) return;
 
-    // Check if photo exists in localStorage
-    const savedPhoto = localStorage.getItem('sampath_profile_photo');
-    if (savedPhoto) {
-      photoImg.src = savedPhoto;
-      photoImg.style.display = 'block';
-      placeholder.style.display = 'none';
-    }
+    // Force profile.jpg as default photo
+    localStorage.removeItem('sampath_profile_photo');
+    photoImg.src = 'profile.jpg?v=' + Date.now();
+    photoImg.style.display = 'block';
+    placeholder.style.display = 'none';
 
     photoInput.addEventListener('change', (e) => {
       const file = e.target.files[0];
