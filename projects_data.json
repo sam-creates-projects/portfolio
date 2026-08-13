@@ -1,0 +1,139 @@
+{
+  "profile": {
+    "name": "Sampathkumar N",
+    "title": "B.E. CSE (AI & ML) '27 | Multi-Patent Co-Inventor & AI Researcher",
+    "institution": "Easwari Engineering College (SRM Group), Chennai",
+    "location": "Chennai, Tamil Nadu, India | Target: US MS in AI / CS (Fall 2027)",
+    "email": "sampathk.nataraj@gmail.com",
+    "github": "https://github.com/sam-creates-projects",
+    "linkedin": "https://www.linkedin.com/in/sampathkumar-n",
+    "scholar": "https://scholar.google.com",
+    "bio": "High-performing B.E. Computer Science & Engineering (AI & ML) student with a CGPA of 9.2 (Top 5 Rank). Co-inventor of 3 filed AI patents in Geospatial AI, Adaptive EdTech, and Egocentric Vision-Language Models. Passionate about machine learning, deep learning, and intelligent automation since 10th grade (Scored 99/100 in 12th Grade Computer Science).",
+    "targetDegree": "MS in AI / Computer Science (Fall 2027 / 2028)",
+    "gpa": "9.2 / 10.0 CGPA (Top 5 Rank | ~3.9/4.0 US Scale)",
+    "cs12Score": "99 / 100 in Computer Science (12th Grade)",
+    "gre": "Target: 325+ (Quant 168, Verbal 157)",
+    "toefl": "Target: 105+ / 120"
+  },
+  "researchInterests": [
+    "Vision-Language Models (VLMs) & Egocentric Video",
+    "Geospatial AI & Diffusion Models (DEM Conditioning)",
+    "Multilingual LLM Agents & Adaptive EdTech Scoring",
+    "Climate AI & Environmental Anomaly Detection"
+  ],
+  "academicTimeline": [
+    {
+      "period": "Class 10 (03/2021)",
+      "title": "Foundational Tech Ignition",
+      "institution": "Jawahar Vidyalaya Senior Secondary School, Chennai",
+      "grade": "Strong Foundation",
+      "description": "Sparked deep passion for Computer Science, programming, and software engineering principles."
+    },
+    {
+      "period": "Class 12 (03/2023)",
+      "title": "Computer Science Excellence",
+      "institution": "DAV Matric Higher Secondary School (Gill Nagar), Chennai",
+      "grade": "99 / 100 in Computer Science",
+      "description": "Achieved near-perfect 99/100 score in 12th Grade CS, laying the bedrock for B.E. CSE AI & ML."
+    },
+    {
+      "period": "Semester 1 (Fall 2023)",
+      "title": "B.E. CSE AIML - Foundation Year",
+      "institution": "Easwari Engineering College (SRM Group)",
+      "grade": "O Grade in Python, O Grade in Math, O in All Labs",
+      "description": "Demonstrated core mastery with Outstanding (O) grades in Python Programming, Matrices & Calculus, and all laboratory practicals."
+    },
+    {
+      "period": "Semester 2 (Spring 2024)",
+      "title": "Mathematical & Computational Foundations",
+      "institution": "Easwari Engineering College (SRM Group)",
+      "grade": "A+ in Advanced Calculus | A in C Programming",
+      "description": "Excelled in Advanced Calculus (foundational for AI/ML vector mathematics) and C Programming."
+    },
+    {
+      "period": "Semester 3 (Fall 2024)",
+      "title": "Core Artificial Intelligence & ML",
+      "institution": "Easwari Engineering College (SRM Group)",
+      "grade": "A+ in Intro to AI | A in ML | A in Discrete Math",
+      "description": "Mastered foundational AI paradigms, supervised/unsupervised Machine Learning, and Discrete Mathematics."
+    },
+    {
+      "period": "Semester 4 (Spring 2025)",
+      "title": "Algorithmic Rigor & Data Structures",
+      "institution": "Easwari Engineering College (SRM Group)",
+      "grade": "A in DAA | A in DSA",
+      "description": "Achieved high performance in Design and Analysis of Algorithms (DAA) and Data Structures & Algorithms (DSA)."
+    },
+    {
+      "period": "Semester 5 (Fall 2025)",
+      "title": "Advanced NLP & Big Data Infrastructure",
+      "institution": "Easwari Engineering College (SRM Group)",
+      "grade": "A+ in NLP | A in OS | A in Big Data Analytics",
+      "description": "Secured A+ in Natural Language Processing (NLP), along with A grades in Operating Systems and Big Data Analytics."
+    },
+    {
+      "period": "Semester 6 (Spring 2026)",
+      "title": "Deep Learning & Edge Computing Peak",
+      "institution": "Easwari Engineering College (SRM Group)",
+      "grade": "O Grade in AI for Edge Computing | A+ in All Subjects",
+      "description": "Achieved O Grade in AI for Edge Computing and A+ across all 6th-semester subjects including Deep Learning and Web Technologies."
+    },
+    {
+      "period": "Semester 7 (Fall 2026)",
+      "title": "Senior Research & Capstone (Ongoing)",
+      "institution": "Easwari Engineering College (SRM Group)",
+      "grade": "Ongoing Senior Year",
+      "description": "Actively engaged in senior research, IP documentation, and patent implementations across deep learning domains."
+    }
+  ],
+  "patents": [
+    {
+      "id": "patent-1",
+      "title": "GeoMemory+ : Generative AI for Terrain-Constrained Historical Geography",
+      "status": "Patent Filed 🏛️",
+      "coInventors": "Sampathkumar N (Co-Inventor), Duranjai V (Co-Inventor), Mr. Ilamurugan G (Co-Inventor & Assistant Professor)",
+      "description": "Diffusion model & GAN pipeline conditioned on Digital Elevation Models (DEM) and hydrological pathways for historical landscape synthesis with stochastic uncertainty estimation.",
+      "githubUrl": "https://github.com/sam-creates-projects/geomemory-historical-geography-ai-patent",
+      "tags": ["Diffusion Models", "PyTorch", "Geospatial AI", "DEM", "Patent"]
+    },
+    {
+      "id": "patent-2",
+      "title": "EduPulse AI : Multilingual Adaptive Learning & Career Guidance Platform",
+      "status": "Patent Filed 🏛️",
+      "coInventors": "Sampathkumar N (Co-Inventor), Duranjai V (Co-Inventor), Mr. Ilamurugan G (Co-Inventor & Assistant Professor)",
+      "description": "Multi-layered adaptive learning architecture incorporating adaptive competency scoring (CMS/LPS/PPS), multilingual LLM request brokers (504), semantic NLP, and automated skill-gap career mapping.",
+      "githubUrl": "https://github.com/sam-creates-projects/edupulse-ai-personalized-learning-patent",
+      "tags": ["Adaptive AI", "LLMs", "Multilingual NLP", "EdTech", "Patent"]
+    },
+    {
+      "id": "patent-3",
+      "title": "BaristaPOV VLM : Egocentric Vision-Language Models & Action Analytics",
+      "status": "Patent Filed 🏛️",
+      "coInventors": "Sampathkumar N (Co-Inventor), Duranjai V (Co-Inventor), Mr. Ilamurugan G (Co-Inventor & Assistant Professor)",
+      "description": "Egocentric computer vision framework utilizing zero-shot Vision-Language Models (302), text parsing (402), temporal sequence modeling (502), and skill evaluation (508) to track ingredients, actions, and preparation workflows.",
+      "githubUrl": "https://github.com/sam-creates-projects/baristapov-vlm-video-analysis-patent",
+      "tags": ["Vision-Language Models", "Egocentric Video", "Action Recognition", "PyTorch", "Patent"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "AI Climate Anomaly Detection & Prediction System",
+      "category": "ai-ml",
+      "tags": ["Python", "FastAPI", "Isolation Forest", "ARIMA", "Streamlit", "Next.js"],
+      "shortDescription": "Full-stack meteorological intelligence system streaming real-time climate metrics, forecasting 7-day temperature trends with ARIMA, and detecting weather anomalies with Isolation Forest.",
+      "fullDescription": "Engineered an end-to-end meteorological intelligence pipeline. Combines real-time OpenWeatherAPI stream ingestion with ARIMA time-series forecasting (0.42°C MAE) and unsupervised Isolation Forest anomaly detection (93.8% precision for extreme heatwaves/rainfall). Served via FastAPI microservices to Streamlit & Next.js dashboards.",
+      "githubUrl": "https://github.com/sam-creates-projects/climate-ai-system",
+      "demoUrl": "",
+      "impact": "93.8% Anomaly Precision | 0.42°C Forecasting MAE | 2,400 req/min FastAPI Throughput",
+      "featured": true,
+      "stars": 48,
+      "forks": 14
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "C", "Java", "C++", "SQL", "TypeScript / JavaScript", "Bash"],
+    "frameworks": ["Vision-Language Models (VLMs)", "PyTorch", "TensorFlow", "Scikit-Learn", "FastAPI", "ARIMA", "Streamlit", "Next.js", "OpenCV", "YOLOv8"],
+    "tools": ["Digital Elevation Models (DEM)", "Video Processing Pipelines", "Docker", "Git & GitHub", "Linux", "AWS"]
+  }
+}
