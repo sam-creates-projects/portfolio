@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in LaTeX (Jake's Resume template style)
+%-------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Sampathkumar N} \\ \vspace{2pt}
+    \small
+    \href{mailto:sampathk.nataraj@gmail.com}{sampathk.nataraj@gmail.com} $|$
+    +91 99621 81967 $|$
+    \href{https://linkedin.com/in/sampathkumar-n}{linkedin.com/in/sampathkumar-n} $|$
+    \href{https://github.com/sam-creates-projects}{github.com/sam-creates-projects} $|$
+    Chennai, India
+\end{center}
+
+%----------INTRODUCTION----------
+\section{Introduction}
+\small{AI/ML systems engineer building research-grade computer vision, retrieval, and edge-AI systems, with four patents filed --- two published at Indian-level conferences --- and six independently engineered systems spanning agentic tooling, low-latency vector search, 3D vision, on-device voice AI, medical imaging, and neuromorphic robotics. Seeking a graduate research position applying systems-level ML engineering to open problems in efficient and embodied AI.}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Easwari Engineering College (SRM Group)}{Chennai, India}
+      {B.E., Computer Science and Engineering (Artificial Intelligence \& Machine Learning)}{Aug 2023 -- May 2027}
+    \resumeItemListStart
+      \resumeItem{CGPA: 8.9 / 10}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PATENTS & PUBLICATIONS-----------
+\section{Patents \& Publications}
+\small{\textit{All patents filed through Easwari Engineering College (SRM Group); international filing in progress (\textasciitilde 1 year timeline).}}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Knowledge Dark Matter Retrieval Network (KDM-RN)} --- Patent Filed; published at an Indian-level conference. Framework for inferring latent knowledge absent from existing knowledge graphs.}
+    \resumeItem{\textbf{GeoMemory+: Terrain-Constrained Reconstruction of Historical Geography} --- Patent Filed; published at an Indian-level conference. Diffusion model reconstructing historical terrain from satellite and DEM data.}
+    \resumeItem{\textbf{EduPulse AI: Personalized Learning \& Career Guidance System} --- Patent Filed. Multilingual adaptive learning platform with an adaptive scoring engine. (Co-inventors: Duranjai V, Ilamurugan G.)}
+    \resumeItem{\textbf{BaristaPOV VLM: Automated Analysis of Barista POV Video Streams} --- Patent Filed. Vision-language framework scoring beverage-preparation workflows. (Co-inventors: Duranjai V, Ilamurugan G.)}
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH PROJECTS-----------
+\section{Research Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AutoPatch --- Agentic AST-Based CI/CD Debugger and Autonomous Patcher}{}
+      {Python, AST, FastAPI}{}
+    \resumeItemListStart
+      \resumeItem{Localizes test failures via AST traversal and synthesizes verified patch diffs --- 100\% pass@1 in 0.15s per fix.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {HyperVector --- Sub-Millisecond SIMD Vector Search Engine}{}
+      {C++20, ARM NEON, HNSW}{}
+    \resumeItemListStart
+      \resumeItem{HNSW vector index with hand-written 128-bit NEON intrinsics --- 21,750+ QPS at 0.046ms latency, 99.4\% recall@10.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {EdgeDepth-MPS --- Real-Time Monocular-to-3D Vision on Apple Metal}{}
+      {PyTorch, MPS, Point Clouds}{}
+    \resumeItemListStart
+      \resumeItem{Depth estimation with camera-intrinsic unprojection to dense point clouds --- 46.8 FPS on-device.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {EchoStream --- Full-Duplex On-Device Voice AI}{}
+      {Apple MLX, WebSockets, VAD}{}
+    \resumeItemListStart
+      \resumeItem{Streaming voice pipeline with barge-in handling --- 23.66ms glass-to-glass latency, \textless 40ms interrupt response.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {NeuroScan-3D --- Volumetric 3D MRI Brain Tumor Segmentation}{}
+      {PyTorch, 3D-UNet, BraTS}{}
+    \resumeItemListStart
+      \resumeItem{Multi-modal 3D-UNet with multi-planar reconstruction --- 94.1\% Dice on whole tumor, 92.4\% on tumor core.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {NeuroBlink --- Neuromorphic SNN for Drone Collision Evasion}{}
+      {SNN, Event Cameras, LIF Neurons}{}
+    \resumeItemListStart
+      \resumeItem{Spiking neural network on event-camera data --- 2.88ms evasion latency, 1{,}000x finer temporal resolution than frame cameras.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Machine Learning Intern, Tendworks Pvt Ltd}{Mar 2026 -- Present}
+      {Chennai, India}{}
+    \resumeItemListStart
+      \resumeItem{Develop data-handling and workflow logic for the HRMS Expense Management module.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Machine Learning Intern, OEG Defence \& Aerospace Pvt. Ltd.}{Jun 2025}
+      {Chennai, India}{}
+    \resumeItemListStart
+      \resumeItem{Built and deployed YOLOv8 drone object-detection models with Roboflow datasets and OpenCV inference pipelines.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, C, Java, SQL, JavaScript/TypeScript} \\
+     \textbf{AI/ML}{: PyTorch, Computer Vision, LLMs, RAG, Vision-Language Models, Spiking Neural Networks, Diffusion Models} \\
+     \textbf{Systems \& Tools}{: Git, Docker, FastAPI, OpenCV, Roboflow, Vector Databases (pgvector, Redis), SQLite} \\
+     \textbf{Hardware Acceleration}{: ARM NEON SIMD, Apple Metal (MPS), Apple MLX}
+    }}
+ \end{itemize}
+
+%-----------HONORS & ACTIVITIES-----------
+\section{Honors \& Activities}
+\small{Top 30 of national teams, Smart India Hackathon 2024 (RailNav railway navigation system).\\
+Participant: Convolve 4.0 (Pan-IIT AI/ML Hackathon), Dev Heat Hackathon (Spring Fiesta), Hack-4-Mini 2.0.}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\small{Oracle Cloud Infrastructure 2025 Certified GenAI Professional --- Oracle Cloud Infrastructure 2025 AI Foundations Associate \\
+NPTEL: Internet of Things, Privacy \& Security in Online Social Media, Leadership \& Team Effectiveness \\
+Infosys SpringBoard: Programming in C, Java Concepts, Introduction to Data Science}
+
+\end{document}
